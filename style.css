@@ -29,6 +29,10 @@ body {
 	scroll-snap-type: y mandatory;
 }
 
+.about{
+	color: green;
+}
+
 .navbar{
 	position: fixed;
 	top: 0;
