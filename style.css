@@ -83,6 +83,19 @@ section p {
 	font-size: 1.5rem;
 }
 
+/*Sectiuon Images*/
 section#about{
-	background-image: url("img/img2.jpg") no-repeat center center/cover;
+	background: url("https://source.unsplash.com/yQorCngxzwI/1600x900") no-repeat center center/cover;
+}
+
+section#bnp{
+	background: url("https://source.unsplash.com/fsJB3KT2rj8/1600x900") no-repeat center center/cover;
+}
+
+section#career{
+	background: url("https://source.unsplash.com/1h2Pg97SXfA/1600x900") no-repeat center center/cover;
+}
+
+section#contact{
+	background: url("https://source.unsplash.com/28ZbKOWiZfs/1600x900") no-repeat center center/cover;
 }
