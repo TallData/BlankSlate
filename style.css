@@ -25,8 +25,8 @@ body {
 	height: 100%;
 	/*CSS Smooth Scroll*/
 	overflow-y: scroll;
-	scroll-behavior: smooth;
-	scroll-snap-type: y mandatory;
+	/*scroll-behavior: smooth;*/
+	/*scroll-snap-type: y mandatory;*/
 }
 
 }
