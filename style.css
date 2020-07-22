@@ -29,8 +29,6 @@ body {
 	scroll-snap-type: y mandatory;
 }
 
-.about{
-	color: green;
 }
 
 .navbar{
@@ -83,3 +81,6 @@ section h1 {
 section p {
 	font-size: 1.5rem;
 }
+
+section about{
+	color: green;
