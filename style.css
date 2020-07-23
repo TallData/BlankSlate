@@ -70,6 +70,7 @@ body {
 }
 
 .navbar ul li a {
+	display: inline;
 	text-decoration:  none;
 	text-transform: uppercase;
 	color: #fff;
