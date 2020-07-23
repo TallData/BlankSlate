@@ -57,6 +57,7 @@ body {
 	text-decoration:  none;
 	text-transform: uppercase;
 	color: #d4b3d9;
+	background-color: white;
 }
 
 .navbar ul li a:hover{
