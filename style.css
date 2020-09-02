@@ -1,79 +1,40 @@
-
 {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-/*body 
-{
-	background-image: url("img/img2.jpeg");
-	background-size: cover;
-	background-repeat: no-repeat;
-}*/
-
-/*
-Color Schemes
-#05386B
-#379683
-#5CDB95
-#8EE4AF
-#EDF5E1
-*/
 body {
-	font-family: Arial, Helvetica,sans-serif;
-	background: #05386B;
-	color: #EDF5E1;
-	line-height: 1.6;
-	height: 100vh;
-	overflow: hidden;
-}
+  line-height: 1;
+  color: black;
+  background: #ffc914;
+  font-size: 200%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
 
-.container {
-	width: 100%;
-	height: 100%;
-	/*CSS Smooth Scroll*/
-	overflow-y: scroll;
-	/*scroll-behavior: smooth;*/
-	/*scroll-snap-type: y mandatory;*/
-}
-
-/* Create two equal columns that sits next to each other */
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-}
-
-
+/**Navbar**/
 .navbar{
-	position: fixed;
-	top: 0;
-	z-index: 1;
 	display: flex;
 	width: 100%;
 	height: 60px;
-}
-
-.navbar ul {
-	display: flex;
-	list-style: none;
-	width: 100%;
-	justify-content: center;
-	/*background-color: white;*/
+	/*padding: 2em;*/
+	font-weight: bold;
 }
 
 .navbar ul li {
 	display: inline;
-	margin: 0 1rem;
-	padding: 1rem;
+	/*margin: 0 2rem;*/
 }
 
 .navbar ul li a {
-	display: inline;
 	text-decoration:  none;
 	text-transform: uppercase;
-	color: #fff;
+	color: white;
+	background-color: #2e282a;
+	padding: 1em;
+	grid-gap: 1em;
+	margin-right: 10px;
+	border-radius: 15px;
 	/*background-color: white;*/
 }
 
@@ -81,31 +42,103 @@ body {
 	color: skyblue;
 }
 
-section {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-text-align: center;
-width: 100%;
-height: 100vh;
-color: #5CDB95;
-scroll-snap-align:center;
+/**Intro**/
+.intro {
+	display: grid;
+	height: 100px;
+	width: 70%;
+	/*grid-template-row: 80% 20%;*/
+	/*grid-template-columns: 70% 30%;*./
+
+/*	grid-column-gap: 1em;
+	grid-row-gap: 3em;
+*/
+
+	font-size: 100%;
+	font-weight: bold;
 }
 
-section h1 {
-	font-size: 4rem;
-	LINE-HEIGHT:10px;
+.intro {
+	/*background: #379683;*/
+	margin-left: 2.5em;
+	margin-bottom: 1em;
+	margin-top: 3em;
 }
 
-section p {
-	font-size: 1.5rem;
+.Subtitle {
+		font-size: 85%;
+		font-weight: normal;
 }
 
+/**{Portfolio Split}**/
+.portfolio {
+	padding: 1em;
+	grid-gap: 1em;
+	/*grid-template-columns: 50% 50%;*/
+	grid-template-rows: 50% 50%;
+}
 
-/*Section Images template from unsplash*/
+.portfolio > div:nth-child(odd){
+	background: #17bebb;
+}
+
 
 /*
-section#about{
-	/*background: url("https://source.unsplash.com/uhjiu8FjnsQ/1600x900") no-repeat center center/cover;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+*/
+
+/**Wrapper**/
+.wrapper {
+	border-radius: 15px;
+	display: grid;
+	font-size: 80%;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto;
+/*	grid-column-gap: 1em;
+	grid-row-gap: 1em;
+*/
+	padding: 1em;
+	grid-gap: 1em;
+	text-align: center;
+}
+
+.wrapper {
+	background: #eee;
+}
+
+/*
+.wrapper > div:nth-child(odd){
+	background: #17bebb;
+}
+*/
+
+/*
+Color Schemes
+#e4572e
+#17bebb
+#ffc914
+<!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/talldata?hide_landing_page_details=1" style="min-width:320px;height:630px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+<!-- Calendly inline widget end -->
+#76b041
+*/
+/*Media*/
+@media screen and (max-width : 320px)
+{
+  body
+  {
+    font:.8 em;
+  }
+}
+@media screen and (max-width : 1204px)
+{
+  body
+  {
+    font:1em;
+  }
 }
